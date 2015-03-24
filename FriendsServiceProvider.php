@@ -81,6 +81,7 @@ class FriendsServiceProvider extends ServiceProvider
         
         $this->app['FriendsAPI'] = $this->app->share(function($app) {
             \App::register('\EllipseSynergie\ApiResponse\Laravel\ResponseServiceProvider');
+            \App::register('\Jlapp\Swaggervel\SwaggervelServiceProvider');
             //\App::register('\LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider');
             //\App::register('\LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider');
             
