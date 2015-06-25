@@ -70,8 +70,8 @@ class ActivityTypeBase implements ActivityTypeBaseInterface
     public function getConfig()
     {
         // TODO figure out this inconcistency between installations
-        //return $this->dirName . '/' . $this->fieldConfig;
-        return '/plugins/' . $this->dirName . '/' . $this->fieldConfig;
+        return $this->dirName . '/' . $this->fieldConfig;
+        //return '/plugins/' . $this->dirName . '/' . $this->fieldConfig;
     }
 
     /**
